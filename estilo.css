@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+
+* {
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*NAVBAR---------------------------------------------------------------------------------------------------------------------*/
+header {
+  position: fixed;
+  z-index: 20;
+  width: 100%;
+  height: 100px;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255, 1);
+}
+
+.somosjade {
+  display: inline-flex;
+  cursor: default;
+  font-family: "Source Sans Pro", sans-serif;
+  float: left;
+  position: absolute;
+  color: #52B69A;
+  font-size: 80px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #23c186, #20b2aa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-top: -5px;
+  margin-left: -550px;
+}
+
+/*NAV-----------------------------------------------------------------------------------------------------------------------------------------*/
+nav {
+  display: inline-flex;
+  margin-left: 570px;
+  margin-top: -5px;
+}
+
+nav button {
+margin-top: 22px;
+margin-left: 10px;
+}
+
+
+.button {
+  padding: 1.3em 3em;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+}
+
+.button:hover {
+  background-color: #23c483;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}
+
+.button:active {
+  transform: translateY(-1px);
+}
+
+/*BODY-----------------------------------------------------------------------------------------------------------------*/
+body{
+  background: url('fundo.jpg') center center no-repeat fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/*SECTION TÍTULO MENSAL--------------------------------------------------------------------------------------------------------------------------------*/
+.tituloCards1 {
+  margin-top: 100px;
+  font: "Source Sans Pro", sans-serif;
+  color: rgb(0, 0, 0, 0.8);
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.8);
+}
+
+.tituloCards1 h1 {
+  font-size: 80px;
+}
+
+.tituloCards1 p {
+  font-size: 25px;
+}
+
+/*SECTION CARDS MENSAL E UNITÁRIO-----------------------------------------------------------*/
+
+body .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 40px 0;
+}
+
+body .container .card {
+  position: relative;
+  min-width: 320px;
+  height: 440px;
+  border-radius: 15px;
+  margin: 30px;
+  transition: 0.5s;
+}
+
+body .container .card:nth-child(1) .box .content a {
+  background: #23c186;
+}
+
+body .container .card:nth-child(2) .box .content a {
+  background: #23c186;
+}
+
+body .container .card:nth-child(3) .box .content a {
+  background: #23c186;
+}
+
+.content button {
+  border: none;
+  background: none;
+}
+
+body .container .card .box {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background: white;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+body .container .card .box:hover {
+  transform: translateY(-50px);
+}
+
+body .container .card .box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+body .container .card .box .content {
+  padding: 20px;
+  text-align: center;
+}
+
+body .container .card .box .content h2 {
+  top: -10px;
+  right: 30px;
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+body .container .card .box .content p {
+  font-size: 1rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+  transition: 0.5s;
+}
+
+body .container .card .box .content a {
+  font-size: 30px;
+  position: relative;
+  display: inline-block;
+  padding: 8px 20px;
+  background: black;
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: 0.5s;
+}
+body .container .card .box .content a:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+/*SECTION TÍTULO DOAÇÃO ÚNICA-----------------------------------------------------------------------------------------------------------------------*/
+.tituloCards2 {
+  margin-top: 80px;
+  font: "Source Sans Pro", sans-serif;
+  color: rgb(0, 0, 0, 0.8);
+  font-weight: bold;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.8);
+}
+
+.tituloCards2 h1 {
+  font-size: 80px;
+}
+
+.tituloCards2 p {
+  font-size: 25px;
+}
+
+@media screen and (max-width: 1300px){
+/*NAVBAR*/
+  .somosjade{
+      margin-top: 5px;
+      margin-left: 195px;
+      font-size: 100px;
+  }
+
+  .button{
+      font-size: 17px;
+      margin-left: 20px;
+      margin-top: 120px;
+  }
+
+  nav{
+      margin-left: 20px;
+  }
+
+  header{
+      height: 195px;
+  }
+  /*TÍTULO MENSAL*/
+  .tituloCards1 {
+    margin-top: 180px;
+  }
+
+  .tituloCards1 h1{
+    font-size: 95px;
+  }
+
+  .tituloCards1 p{
+    font-size: 40px;
+  }
+  /*TÍTULO ÚNICO*/
+  .tituloCards2 h1{
+    font-size: 95px;
+  }
+
+  .tituloCards2 p{
+    font-size: 40px;
+  }
+  /*CARDS*/
+  .card {
+    width: 100%;
+  }
+
+  .card1 .container .card .box .content h2 {
+    font-size: 115px;
+  }
+
+  .card1 .container .card .box .content p {
+    font-size: 35px;
+    padding: 5px 80px 5px 80px;
+  }
+
+  .card1 .container .card .box .content a {
+    font-size: 45px;
+  }
+}

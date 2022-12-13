@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+
+html{
+    scroll-behavior: smooth;
+}
+
+.barra {
+    margin-top: 18px;
+    text-align: center;
+}
+
+h1{
+    text-align:center;
+     font-size: 50px;
+     margin-top: 5%;
+}
+
+p{
+    font-size: 25px;
+    text-align: justify;
+    padding: 20px;
+}
+*{
+    margin:10px;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{ 
+    font-size: 23px;
+    font-family: 'Oswald', sans-serif;
+    background-color: #f5fffa;
+}
+
+a{
+    color:#333;
+    text-decoration:none;
+}
+
+.main-header {
+    padding-top: 100px;
+display:flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.main-header {
+margin-top: -120px;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+    overflow: auto;
+    padding: 4px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 1px 1px 1px white;
+}
+
+.card{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    background: #52b69a;
+}
+
+.card>div{
+    padding: 10px;
+}
+
+.card:nth-child(even) img {
+    order:2;
+}
+
+H2{
+    text-shadow: 2px 2px 2px white;
+    text-align: center;
+}
+
+.meus{
+    text-align: center;
+    padding-top: 10px;
+}
+
+h3{
+    background-color: #76c893;
+    width: 90%;
+    text-align: center;
+    border-radius: 50px;
+}
+
+h4{
+    text-align: center;
+    font-size: 30px;
+    background-color: #76c893;
+    border-radius: 50px;
+    margin-left: 1%;
+    width: 500px;
+    margin-top: 50px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    cursor: default;
+  }
+  
+  /*NAVBAR---------------------------------------------------------------------------------------------------------------------*/
+  header {
+      position: fixed;
+      z-index: 20;
+      width: 100%;
+      height: 100px;
+      top: 0;
+      left: 0;
+      background-color: rgb(255, 255, 255, 1);
+    }
+  
+    .somosjade {
+    display: inline-flex;
+    cursor: default;
+    font-family: "Source Sans Pro", sans-serif;
+    float: left;
+    position: absolute;
+    color: #52B69A;
+    font-size: 80px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #23c186, #20b2aa);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-left: -550px;
+    }
+  
+    /*NAV-----------------------------------------------------------------------------------------------------------------------------------------*/
+    nav {
+      display: inline-flex;
+      margin-left: 570px;
+      margin-top: px;
+    }
+  
+    nav button {
+    margin-top: 22px;
+    margin-left: 10px;
+    }
+  
+  
+    .outdoor {
+    margin-top: 100px;
+    width: 2000px;
+    height: 400px;
+    }
+  
+    .button {
+      padding: 1.3em 3em;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 500;
+      color: #000;
+      background-color: #fff;
+      border: none;
+      border-radius: 45px;
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      outline: none;
+    }
+  
+    .button:hover {
+      background-color: #23c483;
+      box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+      color: #fff;
+      transform: translateY(-7px);
+    }
+  
+    .button:active {
+      transform: translateY(-1px);
+    }
+    .m:hover{
+        background-color: #23c483;
+        box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+        color: #fff;
+        transform: translateY(-7px); 
+    }
+.m{
+
+    padding: 1.3em 3em;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+.m:active {
+    transform: translateY(-1px);
+  }
+  h6{
+    display:none;
+  }
+
+@media screen and (max-width: 768px) {
+    body{
+     width: 200%;
+    }
+    .card{
+    display: block;
+    }
+
+    h1{
+        padding-top: 35px;
+    }
+    .m{
+        margin: 1%;
+    }
+    .somosjade{
+        margin-top: 5px;
+        font-size: 30px;
+        margin-left: 132px;
+        margin-bottom: -40px;
+    }
+    .button{
+        margin-top:40px;
+        margin-left:10px;
+        font-size: 15px;
+        padding:15px;
+    }
+    nav{
+        margin-left: 5px;
+    }
+    header{
+        height: 80px;
+    }
+    h6{
+        display:block;
+        font-size: 100%;
+        margin-top: -1%;
+        margin-left: 40%;
+        color:green;
+    }
+}
